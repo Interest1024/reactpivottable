@@ -39,7 +39,7 @@ class App extends React.Component {
 
     
     async componentDidMount() {
-        data = await fetch('https://cors-anywhere.herokuapp.com/http://www.code.sydney/api_topbabynames/topbabynames/all/2018/boys')
+        data = await fetch('https://cors-anywhere.herokuapp.com/https://www.code.sydney/api_topbabynames/topbabynames/all/2018/boys')
             .then(response=>response.json())
             //.then(data => console.log(data))
             .then(data => this.setState({data, pivotState: this.state.pivotState}))
